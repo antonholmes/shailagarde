@@ -80,6 +80,21 @@ export default function Footer(props) {
                 </Button>
               </Tooltip>
               <Tooltip
+                id="instagram-youtube"
+                title="Subscribe on YouTube"
+                placement={window.innerWidth > 959 ? 'top' : 'left'}
+                classes={{ tooltip: classes.tooltip }}
+              >
+                <Button
+                  href="https://www.youtube.com/shailagarde"
+                  target="_blank"
+                  color="transparent"
+                  className={classes.navLink}
+                >
+                  <i className={classes.socialIcons + ' fab fa-youtube'} />
+                </Button>
+              </Tooltip>
+              {/* <Tooltip
                 id="instagram-linkedin"
                 title="Add me on LinkedIn"
                 placement={window.innerWidth > 959 ? 'top' : 'left'}
@@ -93,7 +108,7 @@ export default function Footer(props) {
                 >
                   <i className={classes.socialIcons + ' fab fa-linkedin'} />
                 </Button>
-              </Tooltip>
+              </Tooltip> */}
             </ListItem>
           </List>
         </div>
