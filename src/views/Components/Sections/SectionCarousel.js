@@ -10,9 +10,9 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 
-import image1 from "assets/img/wedding.jpg";
-import image2 from "assets/img/wedding2.jpg";
-import image3 from "assets/img/wedding3.jpg";
+import image1 from "assets/img/wedding/lakeshore.jpg";
+import image2 from "assets/img/wedding/lakeshore2.jpg";
+import image3 from "assets/img/wedding/ceremony.jpg";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.js";
 
@@ -37,12 +37,12 @@ export default function SectionCarousel() {
               <Carousel {...settings}>
                 <div>
                   <img src={image1} alt="First slide" className="slick-image" />
-                  <div className="slick-caption">
+                  {/* <div className="slick-caption">
                     <h4>
                       <LocationOn className="slick-icons" />
                       Yellowstone National Park, United States
                     </h4>
-                  </div>
+                  </div> */}
                 </div>
                 <div>
                   <img
@@ -50,21 +50,21 @@ export default function SectionCarousel() {
                     alt="Second slide"
                     className="slick-image"
                   />
-                  <div className="slick-caption">
+                  {/* <div className="slick-caption">
                     <h4>
                       <LocationOn className="slick-icons" />
                       Somewhere Beyond, United States
                     </h4>
-                  </div>
+                  </div> */}
                 </div>
                 <div>
                   <img src={image3} alt="Third slide" className="slick-image" />
-                  <div className="slick-caption">
+                  {/* <div className="slick-caption">
                     <h4>
                       <LocationOn className="slick-icons" />
                       Yellowstone National Park, United States
                     </h4>
-                  </div>
+                  </div> */}
                 </div>
               </Carousel>
             </Card>

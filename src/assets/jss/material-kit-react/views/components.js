@@ -9,12 +9,14 @@ const componentsStyle = {
   title: {
     fontSize: "2.8rem",
     fontWeight: "300",
+    fontFamily: `"Playfair Display", "Garamond", serif`,
     display: "inline-block",
     position: "relative"
   },
   subtitle: {
     fontSize: "1.313rem",
     fontWeight: '300',
+    fontFamily: `"Playfair Display", "Garamond", serif`,
     maxWidth: "500px",
     margin: "10px 0 0"
   },
