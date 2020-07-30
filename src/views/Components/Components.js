@@ -69,15 +69,9 @@ export default function Components(props) {
 
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionCarousel />
-        <SectionBasics />
-        <SectionNavbars />
         <SectionTabs />
         <SectionPills />
-        <SectionNotifications />
         <SectionTypography />
-        <SectionJavascript />
-        <SectionCompletedExamples />
-        <SectionLogin />
       </div>
       <Footer />
     </div>
