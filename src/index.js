@@ -7,18 +7,22 @@ import "assets/scss/material-kit-react.scss?v=1.9.0";
 
 // pages for this product
 import Components from "views/Components/Components.js";
-import LandingPage from "views/LandingPage/LandingPage.js";
-import ProfilePage from "views/ProfilePage/ProfilePage.js";
+import JournalismPage from "views/JournalismPage/JournalismPage.js";
+import LifestylePage from "views/LifestylePage/LifestylePage.js";
+import MentalHealthPage from "views/MentalHealthPage/MentalHealthPage.js";
 import LoginPage from "views/LoginPage/LoginPage.js";
+import ProfilePage from "views/ProfilePage/ProfilePage.js";
 
 var hist = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/landing-page" component={LandingPage} />
-      <Route path="/profile-page" component={ProfilePage} />
+      <Route path="/journalism" component={JournalismPage} />
+      <Route path="/lifestyle" component={LifestylePage} />
+      <Route path="/mental-health" component={MentalHealthPage} />
       <Route path="/login-page" component={LoginPage} />
+      <Route path="/profile-page" component={ProfilePage} />
       <Route path="/" component={Components} />
     </Switch>
   </Router>,

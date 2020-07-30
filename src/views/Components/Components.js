@@ -7,14 +7,14 @@ import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 // core components
-import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
-import Parallax from "components/Parallax/Parallax.js";
+import Header from 'components/Header/Header'
+import Footer from "components/Footer/Footer";
+import GridContainer from "components/Grid/GridContainer";
+import GridItem from "components/Grid/GridItem";
+// import Button from "components/CustomButtons/Button.js";
+import Parallax from "components/Parallax/Parallax";
 // sections for this page
-import HeaderLinks from "components/Header/HeaderLinks.js";
+import HeaderLinks from "components/Header/HeaderLinks";
 import SectionBasics from "./Sections/SectionBasics.js";
 import SectionNavbars from "./Sections/SectionNavbars.js";
 import SectionTabs from "./Sections/SectionTabs.js";
@@ -25,8 +25,8 @@ import SectionJavascript from "./Sections/SectionJavascript.js";
 import SectionCarousel from "./Sections/SectionCarousel.js";
 import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
 import SectionLogin from "./Sections/SectionLogin.js";
-import SectionExamples from "./Sections/SectionExamples.js";
-import SectionDownload from "./Sections/SectionDownload.js";
+// import SectionExamples from "./Sections/SectionExamples.js";
+// import SectionDownload from "./Sections/SectionDownload.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 
@@ -37,8 +37,7 @@ export default function Components(props) {
   const { ...rest } = props;
   return (
     <div>
-      <Header
-        brand="Shai Lagarde"
+      <Header brand="SHAI LAGARDE"
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
@@ -46,16 +45,21 @@ export default function Components(props) {
           height: 400,
           color: "white"
         }}
-        {...rest}
-      />
+        {...rest}>
+        <Link
+          to="/"
+          color="transparent"
+          className={classes.navLink}
+        />
+      </Header>
       <Parallax image={require("assets/img/shai1.jpg")}>
         <div className={classes.container}>
           <GridContainer>
-            <GridItem>
+            <GridItem xs={12} sm={12} md={6}>
               <div className={classes.brand}>
                 <h1 className={classes.title}>Shai Lagarde</h1>
                 <h3 className={classes.subtitle}>
-                Journalist, Writer, Producer, Youth Counselor
+                  Journalist, Writer, Producer, Youth Counselor
                 </h3>
               </div>
             </GridItem>
@@ -74,15 +78,6 @@ export default function Components(props) {
         <SectionJavascript />
         <SectionCompletedExamples />
         <SectionLogin />
-        <GridItem md={12} className={classes.textCenter}>
-          <Link to={"/login-page"} className={classes.link}>
-            <Button color="primary" size="lg" simple>
-              View Login Page
-            </Button>
-          </Link>
-        </GridItem>
-        <SectionExamples />
-        <SectionDownload />
       </div>
       <Footer />
     </div>

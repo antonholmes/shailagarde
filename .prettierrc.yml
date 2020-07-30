@@ -1,3 +1,10 @@
-semi: false
-singleQuote: true
-bracketSpacing: false
+semi: false # true
+singleQuote: true # false
+bracketSpacing: false # true
+
+# printWidth: 80 # 80
+# tabWidth: 2 # 2
+# useTabs: false # false
+# trailingComma: none # none | es5 | all
+# jsxBracketSameLine: false # false
+# arrowParens: avoid # avoid | always

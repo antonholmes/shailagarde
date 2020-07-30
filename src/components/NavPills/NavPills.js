@@ -11,8 +11,8 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
+import GridContainer from "components/Grid/GridContainer";
+import GridItem from "components/Grid/GridItem";
 
 import styles from "assets/jss/material-kit-react/components/navPillsStyle.js";
 
@@ -92,11 +92,11 @@ export default function NavPills(props) {
       <GridItem {...horizontal.contentGrid}>{tabContent}</GridItem>
     </GridContainer>
   ) : (
-    <div>
-      {tabButtons}
-      {tabContent}
-    </div>
-  );
+      <div>
+        {tabButtons}
+        {tabContent}
+      </div>
+    );
 }
 
 NavPills.defaultProps = {
