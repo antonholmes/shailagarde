@@ -16,6 +16,8 @@ import image1 from "assets/img/wedding/lakeshore.jpg";
 import image2 from "assets/img/wedding/lakeshore2.jpg";
 import image3 from "assets/img/wedding/ceremony.jpg";
 
+import DataNewYork from './DataNewYork'
+
 import styles from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.js";
 
 const useStyles = makeStyles(styles);
@@ -28,58 +30,24 @@ export default function SectionCarousel() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false
+    autoplay: false,
+    adaptiveHeight: true,
   };
   return (
     <div className={classes.section}>
       <div className={classes.container}>
         <div className={classes.title}>
-          <h3>Latest Posts</h3>
+          <h3>All Photos</h3>
         </div>
         <GridContainer>
           <GridItem xs={16} sm={16} md={12} className={classes.marginAuto}>
             <Card carousel>
-              <Carousel {...settings}>
-                <div>
-                  <img src={image1} alt="First slide" className="slick-image" />
-                  <div className="slick-caption">
-                    <Link to="/holmes" replace
-                    // color="transparent"
-                    >
-                      <h4>
-                        Read more
-                    </h4>
-                    </Link>
+              <Carousel {...settings} >
+                {DataNewYork.map(tile => (
+                  <div>
+                    <img src={tile.img} alt={tile.title} className='slick-image' />
                   </div>
-                </div>
-                <div>
-                  <img
-                    src={image2}
-                    alt="Second slide"
-                    className="slick-image"
-                  />
-                  <div className="slick-caption">
-                    <Link to="/holmes"
-                      color="transparent"
-                    >
-                      <h4>
-                        Read more
-                    </h4>
-                    </Link>
-                  </div>
-                </div>
-                <div>
-                  <img src={image3} alt="Third slide" className="slick-image" />
-                  <div className="slick-caption">
-                    <Link to="/holmes"
-                      color="transparent"
-                    >
-                      <h4>
-                        Read more
-                    </h4>
-                    </Link>
-                  </div>
-                </div>
+                ))}
               </Carousel>
             </Card>
           </GridItem>

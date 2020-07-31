@@ -45,7 +45,7 @@ const navPillsStyle = theme => ({
     textAlign: "center",
     transition: "all .3s",
     padding: "10px 15px",
-    color: "#555555",
+    color: "#E69296",
     height: "auto",
     opacity: "1",
     maxWidth: "100%",
@@ -67,7 +67,7 @@ const navPillsStyle = theme => ({
     width: "100%",
     float: "none !important",
     "& + button": {
-      margin: "10px 0"
+      margin: "5px 0"
     }
   },
   contentWrapper: {
@@ -116,7 +116,7 @@ const navPillsStyle = theme => ({
   rose: {
     "&,&:hover": {
       color: "#FFFFFF",
-      backgroundColor: roseColor,
+      backgroundColor: '#E69296',
       boxShadow:
         "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4)"
     }

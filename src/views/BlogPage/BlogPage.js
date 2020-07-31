@@ -8,6 +8,7 @@ import LocalFlorist from "@material-ui/icons/LocalFlorist"
 import DirectionsBoat from "@material-ui/icons/DirectionsBoat"
 import Favorite from "@material-ui/icons/Favorite"
 import Flight from '@material-ui/icons/Flight'
+import ListAlt from '@material-ui/icons/ListAlt'
 // core components
 import Header from "components/Header/Header"
 import Footer from "components/Footer/Footer"
@@ -19,9 +20,10 @@ import NavPills from "components/NavPills/NavPills"
 import Parallax from "components/Parallax/Parallax"
 
 // Sections for this page
-import WorkSection from "./WorkSection";
+import SectionForm from "./Sections/SectionForm";
+import GalleryCarousel from './Sections/GalleryCarousel'
 
-import { SRLWrapper } from 'simple-react-lightbox'
+import SimpleReactLightbox from 'simple-react-lightbox'
 
 import profile from "assets/img/wedding2.jpg"
 
@@ -76,18 +78,12 @@ export default function ProfilePage(props) {
           <div className={classes.container}>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={6}>
-                <div className={classes.description}>
-                  <h2 className={classes.title}>HOLMES-LAGARDE WEDDING</h2>
-                  <p>
-                    July 11, 2020
-                <br />
-                St. John Paul II Chapel,
-                Lakeshore, Mexico, Pampanga
-              </p>
+                <div className={classes.profile}>
+                  <h3 className={classes.title}>#ShaiLockedHolmes</h3>
                 </div>
               </GridItem>
             </GridContainer>
-            <GridContainer justify="left">
+            <GridContainer>
               <GridItem xs={16} sm={16} md={12} className={classes.navWrapper}>
                 <NavPills
                   alignCenter
@@ -98,17 +94,14 @@ export default function ProfilePage(props) {
                       tabIcon: Flight,
                       tabContent: (
                         <GridContainer justify="center">
-                          <div className={classes.typo}>
-                            {/* <div className={classes.note}>New York</div> */}
-                            <p>
-                              I will be the leader of a company that ends up being worth
-                              billions of dollars, because I got the answers. I understand
-                              culture. I am the nucleus. I think that’s a responsibility that
-                              I have, to push possibilities, to show people, this is the level
-                              that things could be at.
-                            </p>
-                          </div>
-                          <GridItem xs={12} sm={12} md={6}>
+                          <GridItem xs={11} sm={11} md={11}>
+                            <div className={classes.description}>
+                              <p>
+                                Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.
+                              </p>
+                            </div>
+                          </GridItem>
+                          < GridItem xs={10} sm={10} md={5} >
                             <img
                               alt="..."
                               src={newyork}
@@ -120,30 +113,28 @@ export default function ProfilePage(props) {
                               className={navImageClasses}
                             />
                           </GridItem>
-                          <GridItem xs={12} sm={12} md={6}>
+                          <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
                               src={newyork3}
                               className={navImageClasses}
                             />
                           </GridItem>
-                          <div className={classes.typo}>
-                            <p>
-                              I will be the leader of a company that ends up being worth
-                              billions of dollars, because I got the answers. I understand
-                              culture. I am the nucleus. I think that’s a responsibility that
-                              I have, to push possibilities, to show people, this is the level
-                              that things could be at.
-                            </p>
-                          </div>
-                          <GridItem xs={12} sm={12} md={6}>
+                          <GridItem xs={11} sm={11} md={11}>
+                            <div className={classes.description}>
+                              <p>
+                                Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.
+                              </p>
+                            </div>
+                          </GridItem>
+                          <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
                               src={newyork4}
                               className={navImageClasses}
                             />
                           </GridItem>
-                          <GridItem xs={12} sm={12} md={6}>
+                          <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
                               src={newyork5}
@@ -155,15 +146,25 @@ export default function ProfilePage(props) {
                               className={navImageClasses}
                             />
                           </GridItem>
+                          <GridItem xs={11} sm={11} md={11}>
+                            <div className={classes.description}>
+                              <p>
+                                Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.
+                              </p>
+                            </div>
+                          </GridItem>
+                          <GridItem width='100%'>
+                            <GalleryCarousel />
+                          </GridItem>
                         </GridContainer>
                       )
                     },
                     {
-                      tabButton: "Ceremony",
-                      tabIcon: LocalFlorist,
+                      tabButton: "Prep",
+                      tabIcon: ListAlt,
                       tabContent: (
                         <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={6}>
+                          <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
                               src={ceremony}
@@ -175,21 +176,62 @@ export default function ProfilePage(props) {
                               className={navImageClasses}
                             />
                           </GridItem>
-                          <GridItem xs={12} sm={12} md={6}>
+                          <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
                               src={ceremony2}
                               className={navImageClasses}
                             />
                           </GridItem>
-                          <GridItem xs={12} sm={12} md={6}>
+                          <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
                               src={ceremony4}
                               className={navImageClasses}
                             />
                           </GridItem>
-                          <GridItem xs={12} sm={12} md={6}>
+                          <GridItem xs={10} sm={10} md={5}>
+                            <img
+                              alt="..."
+                              src={ceremony5}
+                              className={navImageClasses}
+                            />
+                          </GridItem>
+                        </GridContainer>
+                      )
+                    },
+                    {
+                      tabButton: "Church",
+                      tabIcon: LocalFlorist,
+                      tabContent: (
+                        <GridContainer justify="center">
+                          <GridItem xs={10} sm={10} md={5}>
+                            <img
+                              alt="..."
+                              src={ceremony}
+                              className={navImageClasses}
+                            />
+                            <img
+                              alt="..."
+                              src={ceremony3}
+                              className={navImageClasses}
+                            />
+                          </GridItem>
+                          <GridItem xs={10} sm={10} md={5}>
+                            <img
+                              alt="..."
+                              src={ceremony2}
+                              className={navImageClasses}
+                            />
+                          </GridItem>
+                          <GridItem xs={10} sm={10} md={5}>
+                            <img
+                              alt="..."
+                              src={ceremony4}
+                              className={navImageClasses}
+                            />
+                          </GridItem>
+                          <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
                               src={ceremony5}
@@ -204,7 +246,7 @@ export default function ProfilePage(props) {
                       tabIcon: DirectionsBoat,
                       tabContent: (
                         <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={6}>
+                          <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
                               src={lakeshore}
@@ -216,7 +258,7 @@ export default function ProfilePage(props) {
                               className={navImageClasses}
                             />
                           </GridItem>
-                          <GridItem xs={12} sm={12} md={6}>
+                          <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
                               src={lakeshore}
@@ -236,14 +278,14 @@ export default function ProfilePage(props) {
                       tabIcon: Favorite,
                       tabContent: (
                         <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={6}>
+                          <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
                               src={reception}
                               className={navImageClasses}
                             />
                           </GridItem>
-                          <GridItem xs={12} sm={12} md={6}>
+                          <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
                               src={reception2}
@@ -255,14 +297,14 @@ export default function ProfilePage(props) {
                               className={navImageClasses}
                             />
                           </GridItem>
-                          <GridItem xs={12} sm={12} md={6}>
+                          <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
                               src={reception4}
                               className={navImageClasses}
                             />
                           </GridItem>
-                          <GridItem xs={12} sm={12} md={6}>
+                          <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
                               src={reception5}
@@ -271,7 +313,7 @@ export default function ProfilePage(props) {
                           </GridItem>
                         </GridContainer>
                       )
-                    }
+                    },
                   ]}
                 />
               </GridItem>
@@ -279,10 +321,7 @@ export default function ProfilePage(props) {
           </div>
         </div>
       </div>
-      <div className={classes.container}>
-        <WorkSection />
-      </div>
       <Footer />
-    </div>
+    </div >
   );
 }

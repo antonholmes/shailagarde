@@ -26,11 +26,11 @@ export default function SectionPills() {
             <h3>About Me</h3>
           </div>
           <GridContainer>
-            <GridItem xs={16} sm={16} md={12}>
+            <GridItem xs={15} sm={15} md={12}>
               <NavPills
-                color='primaryColor'
+                color='rose'
                 horizontal={{
-                  tabsGrid: { xs: 4, sm: 4, md: 3 },
+                  tabsGrid: { xs: 3, sm: 3, md: 3 },
                   contentGrid: { xs: 12, sm: 12, md: 9 }
                 }}
                 tabs={[
@@ -40,25 +40,7 @@ export default function SectionPills() {
                     tabContent: (
                       <span>
                         <p>
-                          Collaboratively administrate empowered markets via
-                          plug-and-play networks. Dynamically procrastinate B2C
-                          users after installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
+                          Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.
                         </p>
                       </span>
                     )
@@ -69,40 +51,18 @@ export default function SectionPills() {
                     tabContent: (
                       <span>
                         <p>
-                          Efficiently unleash cross-media information without
-                          cross-media value. Quickly maximize timely
-                          deliverables for real-time schemas.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically maintain clicks-and-mortar solutions
-                          without functional solutions. Dramatically visualize
-                          customer directed convergence without revolutionary
-                          ROI. Collaboratively administrate empowered markets
-                          via plug-and-play networks. Dynamically procrastinate
-                          B2C users after installed base benefits.
+                          Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.
                         </p>
                       </span>
                     )
                   },
                   {
                     tabButton: "Mental Health",
-                    tabIcon: Loyalty,
+                    tabIcon: Face,
                     tabContent: (
                       <span>
                         <p>
-                          Efficiently unleash cross-media information without
-                          cross-media value. Quickly maximize timely
-                          deliverables for real-time schemas.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically maintain clicks-and-mortar solutions
-                          without functional solutions. Dramatically visualize
-                          customer directed convergence without revolutionary
-                          ROI. Collaboratively administrate empowered markets
-                          via plug-and-play networks. Dynamically procrastinate
-                          B2C users after installed base benefits.
+                          Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.
                         </p>
                       </span>
                     )
