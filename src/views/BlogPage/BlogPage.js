@@ -18,6 +18,9 @@ import HeaderLinks from "components/Header/HeaderLinks"
 import NavPills from "components/NavPills/NavPills"
 import Parallax from "components/Parallax/Parallax"
 
+// Sections for this page
+import WorkSection from "./WorkSection";
+
 import { SRLWrapper } from 'simple-react-lightbox'
 
 import profile from "assets/img/wedding2.jpg"
@@ -41,6 +44,7 @@ import lakeshore from 'assets/img/wedding/lakeshore.jpg'
 import lakeshore2 from 'assets/img/wedding/lakeshore2.jpg'
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js"
+import { Grid } from "@material-ui/core"
 
 const useStyles = makeStyles(styles)
 
@@ -72,36 +76,19 @@ export default function ProfilePage(props) {
           <div className={classes.container}>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={6}>
-                <div className={classes.profile}>
-                  <div>
-                    <img src={profile} alt="..." className={imageClasses} />
-                  </div>
-                  <div className={classes.name}>
-                    <h2 className={classes.title}>HOLMES-LAGARDE WEDDING</h2>
-                    {/* <h3>WEDDING</h3> */}
-                    {/* <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-twitter"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-instagram"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-facebook"} />
-                    </Button> */}
-                  </div>
-                </div>
-              </GridItem>
-            </GridContainer>
-            <div className={classes.description}>
-              <p>
-                July 11, 2020
+                <div className={classes.description}>
+                  <h2 className={classes.title}>HOLMES-LAGARDE WEDDING</h2>
+                  <p>
+                    July 11, 2020
                 <br />
                 St. John Paul II Chapel,
                 Lakeshore, Mexico, Pampanga
               </p>
-            </div>
-            <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
+                </div>
+              </GridItem>
+            </GridContainer>
+            <GridContainer justify="left">
+              <GridItem xs={16} sm={16} md={12} className={classes.navWrapper}>
                 <NavPills
                   alignCenter
                   color="primary"
@@ -111,6 +98,16 @@ export default function ProfilePage(props) {
                       tabIcon: Flight,
                       tabContent: (
                         <GridContainer justify="center">
+                          <div className={classes.typo}>
+                            {/* <div className={classes.note}>New York</div> */}
+                            <p>
+                              I will be the leader of a company that ends up being worth
+                              billions of dollars, because I got the answers. I understand
+                              culture. I am the nucleus. I think that’s a responsibility that
+                              I have, to push possibilities, to show people, this is the level
+                              that things could be at.
+                            </p>
+                          </div>
                           <GridItem xs={12} sm={12} md={6}>
                             <img
                               alt="..."
@@ -130,6 +127,15 @@ export default function ProfilePage(props) {
                               className={navImageClasses}
                             />
                           </GridItem>
+                          <div className={classes.typo}>
+                            <p>
+                              I will be the leader of a company that ends up being worth
+                              billions of dollars, because I got the answers. I understand
+                              culture. I am the nucleus. I think that’s a responsibility that
+                              I have, to push possibilities, to show people, this is the level
+                              that things could be at.
+                            </p>
+                          </div>
                           <GridItem xs={12} sm={12} md={6}>
                             <img
                               alt="..."
@@ -272,6 +278,9 @@ export default function ProfilePage(props) {
             </GridContainer>
           </div>
         </div>
+      </div>
+      <div className={classes.container}>
+        <WorkSection />
       </div>
       <Footer />
     </div>

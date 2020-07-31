@@ -1,4 +1,4 @@
-import { container } from "assets/jss/material-kit-react.js";
+import { container, title } from "assets/jss/material-kit-react.js";
 
 const componentsStyle = {
   container,
@@ -7,9 +7,15 @@ const componentsStyle = {
     textAlign: "left"
   },
   title: {
-    fontSize: "2.8rem",
-    fontWeight: "300",
+    ...title,
+    fontSize: "2.5rem",
+    fontWeight: "700",
     fontFamily: `"Playfair Display", "Garamond", serif`,
+    marginLeft: '20px',
+    marginRight: '20px',
+    marginTop: "30px",
+    minHeight: "32px",
+    color: "#FFFFFF",
     display: "inline-block",
     position: "relative"
   },

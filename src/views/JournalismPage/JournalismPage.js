@@ -20,9 +20,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
-// import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
-// import WorkSection from "./Sections/WorkSection.js";
 
 const dashboardRoutes = [];
 
@@ -34,6 +32,7 @@ export default function JournalismPage(props) {
   return (
     <div>
       <Header
+        href='/'
         color="transparent"
         routes={dashboardRoutes}
         brand="SHAI LAGARDE"
@@ -55,19 +54,14 @@ export default function JournalismPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Shai Lagarde</h1>
-              <h3 className={classes.subtitle}>
-                Journalist, Writer, Producer, Youth Counselor
-              </h3>
+              <h1 className={classes.title}>Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.</h1>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          {/* <ProductSection /> */}
           <TeamSection />
-          {/* <WorkSection /> */}
         </div>
       </div>
       <Footer />

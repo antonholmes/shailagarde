@@ -51,7 +51,7 @@ export default function TeamSection() {
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
                 <Button
-                  href="/blog"
+                  href="/holmes"
                   color="transparent"
                   className={classes.margin5}
                 >

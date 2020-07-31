@@ -24,6 +24,7 @@ ReactDOM.render(
       <Route path="/mental-health" component={MentalHealthPage} />
       <Route path="/login-page" component={LoginPage} />
       <Route path="/blog" component={BlogPage} />
+      <Route path='/holmes' component={BlogPage} />
       <Route path="/profile-page" component={ProfilePage} />
       <Route path="/" component={Components} />
     </Switch>

@@ -1,4 +1,6 @@
 import React from "react";
+// react components for routing our app without refresh
+import { Link } from "react-router-dom";
 // react component for creating beautiful carousel
 import Carousel from "react-slick";
 // @material-ui/core components
@@ -31,18 +33,24 @@ export default function SectionCarousel() {
   return (
     <div className={classes.section}>
       <div className={classes.container}>
+        <div className={classes.title}>
+          <h3>Latest</h3>
+        </div>
         <GridContainer>
           <GridItem xs={16} sm={16} md={12} className={classes.marginAuto}>
             <Card carousel>
               <Carousel {...settings}>
                 <div>
                   <img src={image1} alt="First slide" className="slick-image" />
-                  {/* <div className="slick-caption">
-                    <h4>
-                      <LocationOn className="slick-icons" />
-                      Yellowstone National Park, United States
+                  <div className="slick-caption">
+                    <Link to="/holmes"
+                      color="transparent"
+                    >
+                      <h4 className={classes.subtitle}>
+                        Read more
                     </h4>
-                  </div> */}
+                    </Link>
+                  </div>
                 </div>
                 <div>
                   <img
@@ -50,21 +58,27 @@ export default function SectionCarousel() {
                     alt="Second slide"
                     className="slick-image"
                   />
-                  {/* <div className="slick-caption">
-                    <h4>
-                      <LocationOn className="slick-icons" />
-                      Somewhere Beyond, United States
+                  <div className="slick-caption">
+                    <Link to="/holmes"
+                      color="transparent"
+                    >
+                      <h4>
+                        Read more
                     </h4>
-                  </div> */}
+                    </Link>
+                  </div>
                 </div>
                 <div>
                   <img src={image3} alt="Third slide" className="slick-image" />
-                  {/* <div className="slick-caption">
-                    <h4>
-                      <LocationOn className="slick-icons" />
-                      Yellowstone National Park, United States
+                  <div className="slick-caption">
+                    <Link to="/holmes"
+                      color="transparent"
+                    >
+                      <h4>
+                        Read more
                     </h4>
-                  </div> */}
+                    </Link>
+                  </div>
                 </div>
               </Carousel>
             </Card>

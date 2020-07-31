@@ -53,10 +53,7 @@ export default function LifestylePage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Shai Lagarde</h1>
-              <h3 className={classes.subtitle}>
-                Journalist, Writer, Producer, Youth Counselor
-              </h3>
+              <h1 className={classes.title}>Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.</h1>
             </GridItem>
           </GridContainer>
         </div>

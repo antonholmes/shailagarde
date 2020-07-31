@@ -15,10 +15,7 @@ import GridItem from "components/Grid/GridItem";
 import Parallax from "components/Parallax/Parallax";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks";
-import SectionBasics from "./Sections/SectionBasics.js";
-import SectionNavbars from "./Sections/SectionNavbars.js";
-import SectionTabs from "./Sections/SectionTabs.js";
-import SectionPills from "./Sections/SectionPills.js";
+import SectionHPills from "./Sections/SectionHPills.js";
 import SectionNotifications from "./Sections/SectionNotifications.js";
 import SectionTypography from "./Sections/SectionTypography.js";
 import SectionJavascript from "./Sections/SectionJavascript.js";
@@ -38,6 +35,7 @@ export default function Components(props) {
   return (
     <div>
       <Header brand="SHAI LAGARDE"
+        href='/'
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
@@ -57,10 +55,7 @@ export default function Components(props) {
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Shai Lagarde</h1>
-                <h3 className={classes.subtitle}>
-                  Journalist, Writer, Producer, Youth Counselor
-                </h3>
+                <h1 className={classes.title}>Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.</h1>
               </div>
             </GridItem>
           </GridContainer>
@@ -69,9 +64,7 @@ export default function Components(props) {
 
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionCarousel />
-        <SectionTabs />
-        <SectionPills />
-        <SectionTypography />
+        <SectionHPills />
       </div>
       <Footer />
     </div>
