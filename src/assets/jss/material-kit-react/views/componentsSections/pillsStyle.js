@@ -10,7 +10,11 @@ const pillsStyle = {
     marginTop: "30px",
     minHeight: "32px",
     textDecoration: "none"
-  }
+  },
+  navWrapper: {
+    margin: "20px auto 50px auto",
+    textAlign: "center"
+  },
 };
 
 export default pillsStyle;

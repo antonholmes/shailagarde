@@ -16,14 +16,7 @@ import Parallax from "components/Parallax/Parallax";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks";
 import SectionHPills from "./Sections/SectionHPills.js";
-import SectionNotifications from "./Sections/SectionNotifications.js";
-import SectionTypography from "./Sections/SectionTypography.js";
-import SectionJavascript from "./Sections/SectionJavascript.js";
 import SectionCarousel from "./Sections/SectionCarousel.js";
-import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
-import SectionLogin from "./Sections/SectionLogin.js";
-// import SectionExamples from "./Sections/SectionExamples.js";
-// import SectionDownload from "./Sections/SectionDownload.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 
@@ -35,7 +28,7 @@ export default function Components(props) {
   return (
     <div>
       <Header brand="SHAI LAGARDE"
-        href='/'
+        href='#home'
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
@@ -44,11 +37,6 @@ export default function Components(props) {
           color: "white"
         }}
         {...rest}>
-        <Link
-          to="/"
-          color="transparent"
-          className={classes.navLink}
-        />
       </Header>
       <Parallax image={require("assets/img/shai1.jpg")}>
         <div className={classes.container}>

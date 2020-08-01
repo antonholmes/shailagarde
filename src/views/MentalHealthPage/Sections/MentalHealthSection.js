@@ -36,7 +36,7 @@ export default function MentalHealthSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
-              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+              <GridItem xs={8} sm={6} md={10} className={classes.itemGrid}>
                 <img src={image} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
@@ -62,7 +62,7 @@ export default function MentalHealthSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
-              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+              <GridItem xs={8} sm={6} md={10} className={classes.itemGrid}>
                 <img src={image2} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
@@ -97,7 +97,7 @@ export default function MentalHealthSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
-              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+              <GridItem xs={8} sm={6} md={10} className={classes.itemGrid}>
                 <img src={shai} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>

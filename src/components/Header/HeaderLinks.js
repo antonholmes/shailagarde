@@ -28,7 +28,7 @@ export default function HeaderLinks(props) {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Link
-          to="/"
+          to="/#about"
           color="transparent"
           className={classes.navLink}
         >

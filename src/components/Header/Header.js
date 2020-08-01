@@ -1,4 +1,6 @@
 import React from "react";
+// react components for routing our app without refresh
+import { Link } from "react-router-dom";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // nodejs library to set properties for components
@@ -60,7 +62,13 @@ export default function Header(props) {
     [classes.absolute]: absolute,
     [classes.fixed]: fixed
   });
-  const brandComponent = <Button className={classes.title}>{brand}</Button>;
+  const brandComponent =
+    <Button className={classes.title}>
+      <Link to="/"
+        color="transparent"
+        className={classes.title}>{brand}
+      </Link>
+    </Button>
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
@@ -71,8 +79,8 @@ export default function Header(props) {
               {leftLinks}
             </Hidden>
           ) : (
-            brandComponent
-          )}
+              brandComponent
+            )}
         </div>
         <Hidden smDown implementation="css">
           {rightLinks}

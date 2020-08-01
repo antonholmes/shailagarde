@@ -22,17 +22,11 @@ export default function SectionPills() {
     <div className={classes.section}>
       <div className={classes.container}>
         <div id="navigation-pills">
-          <div className={classes.title}>
-            <h3>About Me</h3>
-          </div>
+          <h2 className={classes.title}>About Me</h2>
           <GridContainer>
-            <GridItem xs={15} sm={15} md={12}>
+            <GridItem xs={16} sm={16} md={12} className={classes.navWrapper}>
               <NavPills
                 color='rose'
-                horizontal={{
-                  tabsGrid: { xs: 3, sm: 3, md: 3 },
-                  contentGrid: { xs: 12, sm: 12, md: 9 }
-                }}
                 tabs={[
                   {
                     tabButton: "Journalism",

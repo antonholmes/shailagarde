@@ -33,9 +33,7 @@ export default function SectionCarousel() {
   return (
     <div className={classes.section}>
       <div className={classes.container}>
-        <div className={classes.title}>
-          <h3>Latest Posts</h3>
-        </div>
+        <h2 className={classes.title}>Latest Post</h2>
         <GridContainer>
           <GridItem xs={16} sm={16} md={12} className={classes.marginAuto}>
             <Card carousel>
@@ -44,7 +42,8 @@ export default function SectionCarousel() {
                   <img src={image1} alt="First slide" className="slick-image" />
                   <div className="slick-caption">
                     <Link to="/holmes" replace
-                    // color="transparent"
+                      color="transparent"
+                      className={classes.title}
                     >
                       <h4>
                         Read more
