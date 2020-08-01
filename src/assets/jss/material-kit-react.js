@@ -64,7 +64,7 @@ const card = {
 };
 
 const defaultFont = {
-  fontFamily: '"Playfair Display", "Garamond", "Helvetica", serif',
+  fontFamily: `"Playfair Display", "Garamond", "Helvetica", serif`,
   fontWeight: "300",
   lineHeight: "1.5em"
 };

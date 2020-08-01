@@ -69,7 +69,7 @@ const customInputStyle = {
     height: "unset",
     "&,&::placeholder": {
       fontSize: "14px",
-      fontFamily: '"Playfair Display", "Garamond", "Helvetica", serif',
+      fontFamily: `"Playfair Display", "Garamond", "Helvetica", serif`,
       fontWeight: "400",
       lineHeight: "1.42857",
       opacity: "1"

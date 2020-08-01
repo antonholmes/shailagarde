@@ -9,7 +9,7 @@ const popoverStyles = {
     borderRadius: "3px",
     display: "block",
     maxWidth: "276px",
-    fontFamily: '"Playfair Display", "Garamond", "Helvetica", serif',
+    fontFamily: `"Playfair Display", "Garamond", "Helvetica", serif`,
     fontStyle: "normal",
     fontWeight: "400",
     textAlign: "start",

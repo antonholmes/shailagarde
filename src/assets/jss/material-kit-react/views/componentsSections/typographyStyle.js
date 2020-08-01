@@ -24,7 +24,7 @@ const typographyStyle = {
     width: "100%"
   },
   note: {
-    fontFamily: '"Playfair Display", "Garamond", "Helvetica", serif',
+    fontFamily: `"Playfair Display", "Garamond", "Helvetica", serif`,
     bottom: "10px",
     color: "#c0c1c2",
     display: "block",
