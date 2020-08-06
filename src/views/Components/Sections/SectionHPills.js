@@ -10,52 +10,53 @@ import Face from "@material-ui/icons/Face";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import NavPills from "components/NavPills/NavPills.js";
+import CustomTabs from "components/CustomTabs/CustomTabs.js";
 
-import styles from "assets/jss/material-kit-react/views/componentsSections/pillsStyle.js";
+import styles from "assets/jss/material-kit-react/views/componentsSections/tabsStyle.js";
 
 const useStyles = makeStyles(styles);
 
-export default function SectionPills() {
+export default function SectionHPills() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
       <div className={classes.container}>
-        <div id="navigation-pills">
+        <div id="nav-tabs">
           <h2 className={classes.title}>About Me</h2>
           <GridContainer>
-            <GridItem xs={16} sm={16} md={12} className={classes.navWrapper}>
-              <NavPills
-                color='rose'
+            <GridItem xs={16} sm={16} md={12}>
+              <CustomTabs
+                plainTabs
+                headerColor='primary'
                 tabs={[
                   {
-                    tabButton: "Journalism",
+                    tabName: "Journalism",
                     tabIcon: PermCameraMic,
                     tabContent: (
                       <span>
-                        <p>
+                        <p className={classes.textCenter}>
                           Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.
                         </p>
                       </span>
                     )
                   },
                   {
-                    tabButton: "Lifestyle",
+                    tabName: "Lifestyle",
                     tabIcon: Loyalty,
                     tabContent: (
                       <span>
-                        <p>
+                        <p className={classes.textCenter}>
                           Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.
                         </p>
                       </span>
                     )
                   },
                   {
-                    tabButton: "Mental Health",
+                    tabName: "Mental Health",
                     tabIcon: Face,
                     tabContent: (
                       <span>
-                        <p>
+                        <p className={classes.textCenter}>
                           Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.
                         </p>
                       </span>

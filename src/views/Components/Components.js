@@ -15,8 +15,10 @@ import GridItem from "components/Grid/GridItem";
 import Parallax from "components/Parallax/Parallax";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks";
-import SectionHPills from "./Sections/SectionHPills.js";
 import SectionCarousel from "./Sections/SectionCarousel.js";
+import JournalismSection from 'views/JournalismPage/Sections/JournalismSection'
+import LifestyleSection from 'views/LifestylePage/Sections/LifestyleSection'
+import MentalHealthSection from 'views/MentalHealthPage/Sections/MentalHealthSection'
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 
@@ -33,12 +35,12 @@ export default function Components(props) {
         fixed
         color="transparent"
         changeColorOnScroll={{
-          height: 400,
+          height: 200,
           color: "white"
         }}
         {...rest}>
       </Header>
-      <Parallax image={require("assets/img/shai1.jpg")}>
+      <Parallax image={require("assets/img/shai2.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
@@ -50,9 +52,10 @@ export default function Components(props) {
         </div>
       </Parallax>
 
-      <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionCarousel />
-        <SectionHPills />
+      <div className={classNames(classes.main)}>
+        <JournalismSection />
+        <LifestyleSection />
+        <MentalHealthSection />
       </div>
       <Footer />
     </div>

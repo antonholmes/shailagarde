@@ -21,27 +21,47 @@ import Parallax from "components/Parallax/Parallax"
 
 // Sections for this page
 import SectionForm from "./Sections/SectionForm";
-import GalleryCarousel from './Sections/GalleryCarousel'
+import GalleryCarouselNY from './Sections/GalleryCarouselNY'
+import LightboxNY from './Sections/LightboxNY'
+import LightboxPrep from './Sections/LightboxPrep'
 
 import SimpleReactLightbox from 'simple-react-lightbox'
 
 import profile from "assets/img/wedding2.jpg"
 
-import ceremony from 'assets/img/wedding/ceremony.jpg'
-import ceremony2 from 'assets/img/wedding/ceremony2.jpg'
-import ceremony3 from 'assets/img/wedding/ceremony3.jpg'
-import ceremony4 from 'assets/img/wedding/ceremony4.jpg'
-import ceremony5 from 'assets/img/wedding/ceremony5.jpg'
+import church from 'assets/img/wedding/church/CHURCH_1.jpg'
+import church2 from 'assets/img/wedding/church/CHURCH_2.jpg'
+import church3 from 'assets/img/wedding/church/CHURCH_3.jpg'
+import church4 from 'assets/img/wedding/church/CHURCH_4.jpg'
+import church5 from 'assets/img/wedding/church/CHURCH_5.jpg'
+import church6 from 'assets/img/wedding/church/CHURCH_6.jpg'
+import church7 from 'assets/img/wedding/church/CHURCH_7.jpg'
+import church8 from 'assets/img/wedding/church/CHURCH_8.jpg'
+import church9 from 'assets/img/wedding/church/CHURCH_9.jpg'
+import church10 from 'assets/img/wedding/church/CHURCH_10.jpg'
 import reception from 'assets/img/wedding/reception.jpg'
 import reception2 from 'assets/img/wedding/reception2.jpg'
 import reception3 from 'assets/img/wedding/reception3.jpg'
 import reception4 from 'assets/img/wedding/reception4.jpg'
 import reception5 from 'assets/img/wedding/reception5.jpg'
-import newyork from 'assets/img/wedding/newyork.jpg'
-import newyork2 from 'assets/img/wedding/newyork2.jpg'
-import newyork3 from 'assets/img/wedding/newyork3.jpg'
-import newyork4 from 'assets/img/wedding/newyork4.jpg'
-import newyork5 from 'assets/img/wedding/newyork5.jpg'
+import newyork from 'assets/img/wedding/newyork/New York-1.jpg'
+import newyork2 from 'assets/img/wedding/newyork/New York-2.jpg'
+import newyork3 from 'assets/img/wedding/newyork/New York-3.jpg'
+import newyork4 from 'assets/img/wedding/newyork/New York-4.jpg'
+import newyork5 from 'assets/img/wedding/newyork/New York-5.jpg'
+import newyork6 from 'assets/img/wedding/newyork/New York-6.jpg'
+import newyork7 from 'assets/img/wedding/newyork/New York-7.jpg'
+import newyork8 from 'assets/img/wedding/newyork/New York-8.jpg'
+import newyork9 from 'assets/img/wedding/newyork/New York-9.jpg'
+import prep from 'assets/img/wedding/prep/Preps-1.jpg'
+import prep2 from 'assets/img/wedding/prep/Preps-2.jpg'
+import prep3 from 'assets/img/wedding/prep/Preps-3.jpg'
+import prep4 from 'assets/img/wedding/prep/Preps-4.jpg'
+import prep5 from 'assets/img/wedding/prep/Preps-5.jpg'
+import prep6 from 'assets/img/wedding/prep/Preps-6.jpg'
+import prep7 from 'assets/img/wedding/prep/Preps-7.jpg'
+import prep8 from 'assets/img/wedding/prep/Preps-8.jpg'
+import prep9 from 'assets/img/wedding/prep/Preps-9.jpg'
 import lakeshore from 'assets/img/wedding/lakeshore.jpg'
 import lakeshore2 from 'assets/img/wedding/lakeshore2.jpg'
 
@@ -54,11 +74,10 @@ export default function ProfilePage(props) {
   const classes = useStyles()
   const { ...rest } = props
   const imageClasses = classNames(
-    classes.imgRaised,
-    classes.imgRoundedCircle,
-    classes.imgFluid
+    classes.imgFluid,
+    classes.imgGallery
   );
-  const navImageClasses = classNames(classes.imgRounded, classes.imgGallery)
+  const navImageClasses = classNames(classes.imgFluid, classes.imgGallery)
   return (
     <div>
       <Header
@@ -73,7 +92,7 @@ export default function ProfilePage(props) {
         {...rest}
       />
       <Parallax small filter image={require("assets/img/bg-antonshai.jpg")} />
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div className={classNames(classes.main)}>
         <div>
           <div className={classes.container}>
             <GridContainer justify="center">
@@ -107,13 +126,13 @@ export default function ProfilePage(props) {
                               src={newyork}
                               className={navImageClasses}
                             />
+                          </GridItem>
+                          <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
                               src={newyork2}
                               className={navImageClasses}
                             />
-                          </GridItem>
-                          <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
                               src={newyork3}
@@ -133,13 +152,13 @@ export default function ProfilePage(props) {
                               src={newyork4}
                               className={navImageClasses}
                             />
-                          </GridItem>
-                          <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
                               src={newyork5}
                               className={navImageClasses}
                             />
+                          </GridItem>
+                          <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
                               src={newyork}
@@ -153,8 +172,30 @@ export default function ProfilePage(props) {
                               </p>
                             </div>
                           </GridItem>
-                          <GridItem width='100%'>
-                            <GalleryCarousel />
+                          <GridItem xs={10} sm={10} md={5}>
+                            <img
+                              alt="..."
+                              src={newyork7}
+                              className={navImageClasses}
+                            />
+                          </GridItem>
+                          <GridItem xs={10} sm={10} md={5}>
+                            <img
+                              alt="..."
+                              src={newyork8}
+                              className={navImageClasses}
+                            />
+                            <img
+                              alt="..."
+                              src={newyork9}
+                              className={navImageClasses}
+                            />
+                          </GridItem>
+                          <GridItem xs={11} sm={11} md={11}>
+                            <SimpleReactLightbox>
+                              {/* <GalleryCarouselNY /> */}
+                              <LightboxNY />
+                            </SimpleReactLightbox>
                           </GridItem>
                         </GridContainer>
                       )
@@ -164,38 +205,89 @@ export default function ProfilePage(props) {
                       tabIcon: ListAlt,
                       tabContent: (
                         <GridContainer justify="center">
+                          <GridItem xs={11} sm={11} md={11}>
+                            <div className={classes.description}>
+                              <p>
+                                Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.
+                              </p>
+                            </div>
+                          </GridItem>
                           <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
-                              src={ceremony}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={ceremony3}
+                              src={prep}
                               className={navImageClasses}
                             />
                           </GridItem>
                           <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
-                              src={ceremony2}
+                              src={prep2}
+                              className={navImageClasses}
+                            />
+                            <img
+                              alt="..."
+                              src={prep3}
+                              className={navImageClasses}
+                            />
+                          </GridItem>
+                          <GridItem xs={11} sm={11} md={11}>
+                            <div className={classes.description}>
+                              <p>
+                                Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.
+                              </p>
+                            </div>
+                          </GridItem>
+                          <GridItem xs={10} sm={10} md={5}>
+                            <img
+                              alt="..."
+                              src={prep4}
+                              className={navImageClasses}
+                            />
+                            <img
+                              alt="..."
+                              src={prep5}
                               className={navImageClasses}
                             />
                           </GridItem>
                           <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
-                              src={ceremony4}
+                              src={prep6}
+                              className={navImageClasses}
+                            />
+                          </GridItem>
+                          <GridItem xs={11} sm={11} md={11}>
+                            <div className={classes.description}>
+                              <p>
+                                Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.
+                              </p>
+                            </div>
+                          </GridItem>
+                          <GridItem xs={10} sm={10} md={5}>
+                            <img
+                              alt="..."
+                              src={prep7}
                               className={navImageClasses}
                             />
                           </GridItem>
                           <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
-                              src={ceremony5}
+                              src={prep8}
                               className={navImageClasses}
                             />
+                            <img
+                              alt="..."
+                              src={prep9}
+                              className={navImageClasses}
+                            />
+                          </GridItem>
+                          <GridItem xs={11} sm={11} md={11}>
+                            <SimpleReactLightbox>
+                              {/* <GalleryCarouselNY /> */}
+                              <LightboxPrep />
+                            </SimpleReactLightbox>
                           </GridItem>
                         </GridContainer>
                       )
@@ -205,36 +297,86 @@ export default function ProfilePage(props) {
                       tabIcon: LocalFlorist,
                       tabContent: (
                         <GridContainer justify="center">
+                          <GridItem xs={11} sm={11} md={11}>
+                            <div className={classes.description}>
+                              <p>
+                                Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.
+                              </p>
+                            </div>
+                          </GridItem>
                           <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
-                              src={ceremony}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={ceremony3}
+                              src={church}
                               className={navImageClasses}
                             />
                           </GridItem>
                           <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
-                              src={ceremony2}
+                              src={church2}
+                              className={navImageClasses}
+                            />
+                            <img
+                              alt="..."
+                              src={church3}
+                              className={navImageClasses}
+                            />
+                          </GridItem>
+                          <GridItem xs={11} sm={11} md={11}>
+                            <div className={classes.description}>
+                              <p>
+                                Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.
+                              </p>
+                            </div>
+                          </GridItem>
+                          <GridItem xs={10} sm={10} md={5}>
+                            <img
+                              alt="..."
+                              src={church4}
+                              className={navImageClasses}
+                            />
+                            <img
+                              alt="..."
+                              src={church5}
                               className={navImageClasses}
                             />
                           </GridItem>
                           <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
-                              src={ceremony4}
+                              src={church6}
+                              className={navImageClasses}
+                            />
+                            <img
+                              alt="..."
+                              src={church7}
+                              className={navImageClasses}
+                            />
+                          </GridItem>
+                          <GridItem xs={11} sm={11} md={11}>
+                            <div className={classes.description}>
+                              <p>
+                                Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.
+                              </p>
+                            </div>
+                          </GridItem>
+                          <GridItem xs={10} sm={10} md={5}>
+                            <img
+                              alt="..."
+                              src={church8}
                               className={navImageClasses}
                             />
                           </GridItem>
                           <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
-                              src={ceremony5}
+                              src={church9}
+                              className={navImageClasses}
+                            />
+                            <img
+                              alt="..."
+                              src={church10}
                               className={navImageClasses}
                             />
                           </GridItem>
