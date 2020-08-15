@@ -7,23 +7,23 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 
-import image from 'assets/img/wedding/preps/Preps-16.jpg'
-import image2 from 'assets/img/wedding/preps/Preps-18.jpg'
-import image3 from 'assets/img/wedding/preps/Preps-123.jpg'
-import image4 from 'assets/img/wedding/preps/Preps-1167.jpg'
-import image5 from 'assets/img/wedding/preps/Preps-1202.jpg'
-import image6 from 'assets/img/wedding/preps/Preps-02339.jpg'
-import image7 from 'assets/img/wedding/preps/Preps-02356.jpg'
-import image8 from 'assets/img/wedding/preps/Preps-7573.jpg'
-import image9 from 'assets/img/wedding/preps/Preps-11379.jpg'
-import image10 from 'assets/img/wedding/preps/Preps-12070.jpg'
-import image11 from 'assets/img/wedding/preps/Preps-102327.jpg'
-import image12 from 'assets/img/wedding/preps/Preps-103102.jpg'
-import image13 from 'assets/img/wedding/preps/Preps-103130.jpg'
-import image14 from 'assets/img/wedding/preps/Preps-175045.jpg'
-import image15 from 'assets/img/wedding/preps/Preps-1063313.jpg'
-import image16 from 'assets/img/wedding/preps/Preps-1170021.jpg'
-import image17 from 'assets/img/wedding/preps/Preps-1202855
+import image from 'assets/img/wedding/prep/Preps-16.jpg'
+import image2 from 'assets/img/wedding/prep/Preps-18.jpg'
+import image3 from 'assets/img/wedding/prep/Preps-123.jpg'
+import image4 from 'assets/img/wedding/prep/Preps-1167.jpg'
+import image5 from 'assets/img/wedding/prep/Preps-1202.jpg'
+import image6 from 'assets/img/wedding/prep/Preps-02339.jpg'
+import image7 from 'assets/img/wedding/prep/Preps-02356.jpg'
+import image8 from 'assets/img/wedding/prep/Preps-7573.jpg'
+import image9 from 'assets/img/wedding/prep/Preps-11379.jpg'
+import image10 from 'assets/img/wedding/prep/Preps-12070.jpg'
+import image11 from 'assets/img/wedding/prep/Preps-102327.jpg'
+import image12 from 'assets/img/wedding/prep/Preps-103102.jpg'
+import image13 from 'assets/img/wedding/prep/Preps-103130.jpg'
+import image14 from 'assets/img/wedding/prep/Preps-175045.jpg'
+import image15 from 'assets/img/wedding/prep/Preps-1063313.jpg'
+import image16 from 'assets/img/wedding/prep/Preps-1170021.jpg'
+import image17 from 'assets/img/wedding/prep/Preps-1202855.jpg'
 import { SRLWrapper } from "simple-react-lightbox";
 
 export default function LightboxPrep() {
@@ -31,7 +31,7 @@ export default function LightboxPrep() {
     <div>
       <SRLWrapper>
         <div className={title}>
-          <h3>View slideshow (20 photos)</h3>
+          <h3>View slideshow (17 photos)</h3>
         </div>
         <img src={image} alt='New York City Hall' width='80rem' height='120rem' />
         <img src={image2} alt='Makeup while waiting in line' width='80rem' height='120rem' />
@@ -50,9 +50,6 @@ export default function LightboxPrep() {
         <img src={image15} alt='Photobooth' width='80rem' height='120rem' />
         <img src={image16} alt='Brooklyn Kiss' width='80rem' height='120rem' />
         <img src={image17} alt='Brooklyn Bridge' width='80rem' height='120rem' />
-        <img src={image18} alt='Before the reception' width='80rem' height='120rem' />
-        <img src={image19} alt='Our witnesses/photographers' width='80rem' height='120rem' />
-        <img src={image20} alt='Homebound' width='80rem' height='120rem' />
       </SRLWrapper>
     </div>
   )
