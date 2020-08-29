@@ -132,16 +132,6 @@ export default function ProfilePage(props) {
                       tabIcon: Flight,
                       tabContent: (
                         <GridContainer justify="center">
-                          <GridItem xs={11} sm={11} md={11}>
-                            <div className={classes.description}>
-                              <p>
-                                Anton proposed on January 29, 2018 shortly before leaving for the US. Anton would study software engineering and web development at Fullstack, while Shai would keep working as a freelance multimedia producer. Sometime in June we met a lawyer who thought we might have a chance at staying there based on our work experience, and that it might be easier if we were married (not knowing we were already engaged!)
-                              <br />
-                                <br />
-                              That was June 21. We thought, sure! We may get to stay, we may not, but whatever happens, it should be fun!
-                              </p>
-                            </div>
-                          </GridItem>
                           < GridItem xs={10} sm={10} md={5} >
                             <img
                               alt="..."
@@ -164,7 +154,16 @@ export default function ProfilePage(props) {
                           <GridItem xs={11} sm={11} md={11}>
                             <div className={classes.description}>
                               <p>
-                                We got our marriage license on June 26 and watched “Ocean’s 8” in Times Square instead of shopping for outfits (because movie tickets are $5 on Tuesdays—priorities!). The next day, we watched “Jurassic World” the next day (seats didn’t recline so AMC gave us free passes—priorities!) and finally scrambled on the 28th. As in, we walked around the city looking for a dress and shoes until we got to this department store Century 21 at 8pm and lined up at the counter just as it was gonna close.
+                                Civil wedding. New York City. June 29, 2018.
+                              </p>
+                              <p>
+                                Anton proposed on January 29 in Manila, a few days before we left for the US. We planned to visit loved ones in a couple of states, plus he wanted to take some short courses in software engineering. One random day (June 21), a few friends broached the idea of getting married at City Hall and we thought, hey, why not?
+                              </p>
+                              <p>
+                                We got our marriage license on the 26th and set the date for the 29th, same as the proposal. We put together our outfits the night before: Anton’s suit was brought from Manila, along with the clip-on bowtie (₩1,000) bought in Seoul. I cut his hair. His leather boots were hand-me-downs from our hosts Arya and Lester. The only thing we bought for him was the dress shirt ($18) from a bargain department store called Century 21. My Silvian Heach lace dress ($70) and bag ($20) were also from Century 21.
+                              </p>
+                              <p>
+                                My shoes ($34.95) are PRADA—we were told they were worth $1,800. I got them from Beacon’s Closet, a chain of ukay-ukay (thrift stores). I wanted my dress to come from there, too, but none fit me quite right. (I had to handstitch the neckline and pin the back straps of the dress I ended up getting, too.) Accessories were brought from Manila, except for the hat, which our friend Beanne got from Amazon as a gift.
                               </p>
                             </div>
                           </GridItem>
@@ -187,26 +186,17 @@ export default function ProfilePage(props) {
                               className={navImageClasses}
                             />
                           </GridItem>
+
                           <GridItem xs={11} sm={11} md={11}>
                             <div className={classes.description}>
                               <p>
-                                Anton’s outfit <br />
-                                Suit - brought from Manila <br />
-                                Bowtie - a 1000-won clip-on from Myeongdong <br />
-                                Haircut - courtesy of Shai <br />
-                                Leather boots - hand-me-down from a friend <br />
-                                White dress shirt - $18 from Century 21 <br />
-                                <br />
-                              Shai’s outfit<br />
-                              Hair and makeup - DIY<br />
-                              Ivory lace dress - $70, from Silvian Heach at Century 21. Had to hand-stitch and pin the back to fit better<br />
-                              Fascinator hat - friend bought it from Amazon as a gift<br />
-                              Bouquet - $5 rental from City Hall, also their gift<br />
-                              PRADA shoes - $34.95 (worth $1,800) from Beacon’s Closet, a chain of ukay shops around Williamsburg. Nice designer dresses there too, but none fit properly<br />
-                              Accessories - brought from Manila
-                              <br /><br />
-                                We became really good friends with a Filipino couple from New Jersey, Mark and Beanne. We both have relatives in the US, but they’re spread out. To be fair to both parties, we asked Mark and Beanne to be our witnesses (at which point she ordered the hat). They not only agreed, but volunteered to help out with photos and other stuff.
-
+                                We became fast friends with a Filipino couple from New Jersey, Mark and Beanne. As soon as we decided to get married, we knew they would be the ones we ask to be our witnesses. Anton and I both have relatives spread out in the US, but we wouldn’t have the time (or money) to organize everything in such a way that’s fair to both parties, so we decided it was just gonna be the four of us. We asked them over a Korean barbecue dinner (one of many). Beanne promptly ordered the hat soon after.
+                              </p>
+                              <p>
+                                The morning of the wedding, we took the cab from Queens to City Hall and lined up. It was first-come, first-serve, so I did my makeup while in line. Mark and Beanne drove there early and happily helped us with whatever we needed: carrying our bags, documentation, cheering us on. They even got me a rental bouquet ($5) to take photos with!
+                              </p>
+                              <p>
+                                We didn’t get rings, and we didn’t ask for anyone special to officiate. Our thinking was that this would be a quick and fuss-free wedding, with a “real” one later on surrounded with our family and friends and done in a more traditional way.
                               </p>
                             </div>
                           </GridItem>
@@ -229,12 +219,15 @@ export default function ProfilePage(props) {
                               className={navImageClasses}
                             />
                           </GridItem>
+
                           <GridItem xs={11} sm={11} md={11}>
                             <div className={classes.description}>
                               <p>
-                                On the day itself, we took the cab from Queens to City Hall and lined up. It was first-come, first serve, so Shai did her makeup in line while in pambahay and tsinelas, then dressed later on when we had secured a slot.
-                              <br />
-                              We didn’t get rings, and we didn’t ask for anyone special to officiate. A City Hall official did it. Our thinking was that this would be a quick and fuss-free wedding, with a “real” one later on surrounded with our family and friends and done in a more traditional way.
+                                We were famished and parched after taking photos on the Brooklyn Bridge. It was a sweltering summer day! These two treated us to brunch at a place called Clinton Hall, near South Street Seaport in Manhattan’s financial district. Our “wedding cake” was called WTF Waffle (red velvet with lots of things on it). We had burgers, fries, sangria, and kamote fries with marshmallow dip. We also played Connect Four. Too bad we had to cut it short, as Anton had to go to a class in the afternoon.
+                              </p>
+                              <p>
+                                A lot of unexpected things happened to us in the US. They run the gamut from awesome or funny or good to bad or ugly or traumatic. This wedding is in its own category: perfect. We wouldn’t have had it any other way.
+
                               </p>
                             </div>
                           </GridItem>
