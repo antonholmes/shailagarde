@@ -7,23 +7,46 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 
-import image from 'assets/img/wedding/prep/Preps-16.jpg'
-import image2 from 'assets/img/wedding/prep/Preps-18.jpg'
-import image3 from 'assets/img/wedding/prep/Preps-123.jpg'
-import image4 from 'assets/img/wedding/prep/Preps-1167.jpg'
-import image5 from 'assets/img/wedding/prep/Preps-1202.jpg'
-import image6 from 'assets/img/wedding/prep/Preps-02339.jpg'
-import image7 from 'assets/img/wedding/prep/Preps-02356.jpg'
-import image8 from 'assets/img/wedding/prep/Preps-7573.jpg'
-import image9 from 'assets/img/wedding/prep/Preps-11379.jpg'
-import image10 from 'assets/img/wedding/prep/Preps-12070.jpg'
-import image11 from 'assets/img/wedding/prep/Preps-102327.jpg'
-import image12 from 'assets/img/wedding/prep/Preps-103102.jpg'
-import image13 from 'assets/img/wedding/prep/Preps-103130.jpg'
-import image14 from 'assets/img/wedding/prep/Preps-175045.jpg'
-import image15 from 'assets/img/wedding/prep/Preps-1063313.jpg'
-import image16 from 'assets/img/wedding/prep/Preps-1170021.jpg'
-import image17 from 'assets/img/wedding/prep/Preps-1202855.jpg'
+import image from 'assets/img/wedding/church/church-1.jpg'
+import image2 from 'assets/img/wedding/church/church-2.jpg'
+import image3 from 'assets/img/wedding/church/church-3.jpg'
+import image4 from 'assets/img/wedding/church/church-4.jpg'
+import image5 from 'assets/img/wedding/church/church-5.jpg'
+import image6 from 'assets/img/wedding/church/church-6.jpg'
+import image7 from 'assets/img/wedding/church/church-7.jpg'
+import image8 from 'assets/img/wedding/church/church-8.jpg'
+import image9 from 'assets/img/wedding/church/church-9.jpg'
+import image10 from 'assets/img/wedding/church/church-10.jpg'
+import image11 from 'assets/img/wedding/church/church-11.jpg'
+import image12 from 'assets/img/wedding/church/church-12.jpg'
+import image13 from 'assets/img/wedding/church/church-13.jpg'
+import image14 from 'assets/img/wedding/church/church-14.jpg'
+import image15 from 'assets/img/wedding/church/church-15.jpg'
+import image16 from 'assets/img/wedding/church/church-16.jpg'
+import image17 from 'assets/img/wedding/church/church-17.jpg'
+import image18 from 'assets/img/wedding/church/church-18.jpg'
+import image19 from 'assets/img/wedding/church/church-19.jpg'
+import image20 from 'assets/img/wedding/church/church-20.jpg'
+import image21 from 'assets/img/wedding/church/church-21.jpg'
+import image22 from 'assets/img/wedding/church/church-22.jpg'
+import image23 from 'assets/img/wedding/church/church-23.jpg'
+import image24 from 'assets/img/wedding/church/church-24.jpg'
+import image25 from 'assets/img/wedding/church/church-25.jpg'
+import image26 from 'assets/img/wedding/church/church-26.jpg'
+import image27 from 'assets/img/wedding/church/church-27.jpg'
+import image28 from 'assets/img/wedding/church/church-28.jpg'
+import image29 from 'assets/img/wedding/church/church-29.jpg'
+import image30 from 'assets/img/wedding/church/church-30.jpg'
+import image31 from 'assets/img/wedding/church/church-31.jpg'
+import image32 from 'assets/img/wedding/church/church-32.jpg'
+import image33 from 'assets/img/wedding/church/church-33.jpg'
+import image34 from 'assets/img/wedding/church/church-34.jpg'
+import image35 from 'assets/img/wedding/church/church-35.jpg'
+import image36 from 'assets/img/wedding/church/church-36.jpg'
+import image37 from 'assets/img/wedding/church/church-37.jpg'
+import image38 from 'assets/img/wedding/church/church-38.jpg'
+import image39 from 'assets/img/wedding/church/church-39.jpg'
+import image40 from 'assets/img/wedding/church/church-40.jpg'
 import { SRLWrapper } from "simple-react-lightbox";
 
 export default function LightboxPrep() {
@@ -50,6 +73,29 @@ export default function LightboxPrep() {
         <img src={image15} alt='Photobooth' width='80rem' height='120rem' />
         <img src={image16} alt='Brooklyn Kiss' width='80rem' height='120rem' />
         <img src={image17} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image18} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image19} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image20} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image21} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image22} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image23} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image24} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image25} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image26} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image27} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image28} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image29} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image30} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image31} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image32} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image33} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image34} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image35} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image36} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image37} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image38} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image39} alt='Brooklyn Bridge' width='80rem' height='120rem' />
+        <img src={image40} alt='Brooklyn Bridge' width='80rem' height='120rem' />
       </SRLWrapper>
     </div>
   )
