@@ -32,7 +32,7 @@ export default function PublishedSection() {
   );
   return (
     <div className={classes.section}>
-      <h2 className={classes.title}>Journalism</h2>
+      <h2 className={classes.title}>Published Work</h2>
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>

@@ -31,10 +31,29 @@ export default function MentalHealthSection() {
     classes.imgFluid
   );
   return (
-    <div className={classes.section}>
+    <div className={classes.section} id='mental-health'>
       <h2 className={classes.title}>Mental Health</h2>
       <div>
         <GridContainer>
+          <GridItem xs={12} sm={12} md={4}>
+            <Card plain>
+
+              <GridItem xs={8} sm={6} md={10} className={classes.itemGrid}>
+                <Link>
+                  <img src={image2} alt="..." className={imageClasses} />
+                  <h4 className={classes.cardTitle}>
+                    Blog
+                <br />
+                  </h4>
+                </Link>
+              </GridItem>
+              <CardBody>
+                <p className={classes.description}>
+                  After completing my training for counseling and mental hygiene, a few of my sentiments I would love to share with the young generation.
+                </p>
+              </CardBody>
+            </Card>
+          </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={8} sm={6} md={10} className={classes.itemGrid}>
@@ -58,24 +77,6 @@ export default function MentalHealthSection() {
               <CardBody>
                 <p className={classes.description}>
                   A series of videos I've prepared to share my experiences and thoughts I would've loved to hear when I was young.
-                </p>
-              </CardBody>
-            </Card>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <Card plain>
-              <GridItem xs={8} sm={6} md={10} className={classes.itemGrid}>
-                <Link>
-                  <img src={image2} alt="..." className={imageClasses} />
-                  <h4 className={classes.cardTitle}>
-                    Blog
-                <br />
-                  </h4>
-                </Link>
-              </GridItem>
-              <CardBody>
-                <p className={classes.description}>
-                  After completing my training for counseling and mental hygiene, a few of my sentiments I would love to share with the young generation.
                 </p>
               </CardBody>
             </Card>

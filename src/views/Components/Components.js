@@ -14,7 +14,7 @@ import GridItem from "components/Grid/GridItem";
 // import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax";
 // sections for this page
-import HeaderLinks from "components/Header/HeaderLinks";
+import HomeLinks from "components/Header/HomeLinks";
 import SectionCarousel from "./Sections/SectionCarousel.js";
 import JournalismSection from 'views/JournalismPage/Sections/JournalismSection'
 import LifestyleSection from 'views/LifestylePage/Sections/LifestyleSection'
@@ -31,7 +31,7 @@ export default function Components(props) {
     <div>
       <Header brand="SHAI LAGARDE"
         href='#home'
-        rightLinks={<HeaderLinks />}
+        rightLinks={<HomeLinks />}
         fixed
         color="transparent"
         changeColorOnScroll={{

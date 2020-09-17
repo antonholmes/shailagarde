@@ -29,6 +29,7 @@ import LightboxLakeshore from './Sections/LightboxLakeshore'
 import LightboxReception from './Sections/LightboxReception'
 
 import SimpleReactLightbox from 'simple-react-lightbox'
+import LightboxButton from './Sections/LightboxButton'
 
 import profile from "assets/img/wedding2.jpg"
 
@@ -232,10 +233,11 @@ export default function ProfilePage(props) {
                             </div>
                           </GridItem>
                           <GridItem xs={11} sm={11} md={11}>
-                            <SimpleReactLightbox>
-                              {/* <GalleryCarouselNY /> */}
-                              <LightboxNY />
-                            </SimpleReactLightbox>
+                            {/* <SimpleReactLightbox> */}
+                            {/* <GalleryCarouselNY /> */}
+                            <LightboxButton />
+                            {/* <LightboxNY /> */}
+                            {/* </SimpleReactLightbox> */}
                           </GridItem>
                         </GridContainer>
                       )

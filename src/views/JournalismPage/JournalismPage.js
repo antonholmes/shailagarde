@@ -66,7 +66,7 @@ export default function ProfilePage(props) {
                   color="primary"
                   tabs={[
                     {
-                      tabButton: "News",
+                      tabButton: "Longform",
                       tabIcon: RssFeed,
                       tabContent: (
                         <GridContainer justify="center">
@@ -80,6 +80,7 @@ export default function ProfilePage(props) {
                                   ‘Why Couldn’t We Do Mass Testing?’
                                   and Other Frequently Asked Questions on the COVID-19 Beat, Answered
                               </p>
+                                <small>May 14, 2020</small>
                               </a>
                             </div>
                           </GridItem>
@@ -93,6 +94,7 @@ export default function ProfilePage(props) {
                                   Are We Actually Ready for GCQ?
                                   Digging Deeper Into Backlogs, ‘Fresh’ vs. ‘Late’ Cases, and Other Issues Surrounding COVID-19 Data to Find Answers
                               </p>
+                                <small>June 2, 2020</small>
                               </a>
                             </div>
                           </GridItem>
@@ -100,7 +102,7 @@ export default function ProfilePage(props) {
                       )
                     },
                     {
-                      tabButton: "Lifestyle",
+                      tabButton: "Reports",
                       tabIcon: Camera,
                       tabContent: (
                         <GridContainer justify="center">

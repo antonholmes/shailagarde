@@ -44,7 +44,7 @@ export default function LightboxNY() {
     <div>
       <SRLWrapper>
         <div className={title}>
-          <h3>View slideshow (20 photos)</h3>
+          <h3>View slideshow (30 photos)</h3>
         </div>
         <img src={image} alt='New York City Hall' width='80rem' height='120rem' />
         <img src={image2} alt='Makeup while waiting in line' width='80rem' height='120rem' />

@@ -31,10 +31,29 @@ export default function TeamSection() {
     classes.imgFluid
   );
   return (
-    <div className={classes.section}>
+    <div className={classes.section} id='lifestyle'>
       <h2 className={classes.title}>Lifestyle</h2>
       <div>
         <GridContainer>
+          <GridItem xs={12} sm={12} md={4}>
+            <Card plain>
+              <GridItem xs={8} sm={6} md={10} className={classes.itemGrid}>
+                <Link>
+                  <img src={lifestyle2} alt="..." className={imageClasses} />
+                  <h4 className={classes.cardTitle}>
+                    Blog
+                  </h4>
+                </Link>
+              </GridItem>
+              <CardBody>
+                <p className={classes.description}>
+                  From Blogspot to WordPress to its new home
+                </p>
+              </CardBody>
+              <CardFooter className={classes.justifyCenter}>
+              </CardFooter>
+            </Card>
+          </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={8} sm={6} md={10} className={classes.itemGrid}>
@@ -56,25 +75,6 @@ export default function TeamSection() {
                   I've been vlogging since the mid 2000s, about pets, life, covers, beauty, mental health, and travel.
                 </p>
               </CardBody>
-            </Card>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <Card plain>
-              <GridItem xs={8} sm={6} md={10} className={classes.itemGrid}>
-                <Link>
-                  <img src={lifestyle2} alt="..." className={imageClasses} />
-                  <h4 className={classes.cardTitle}>
-                    Blog
-                  </h4>
-                </Link>
-              </GridItem>
-              <CardBody>
-                <p className={classes.description}>
-                  From Blogspot to WordPress to its new home
-                </p>
-              </CardBody>
-              <CardFooter className={classes.justifyCenter}>
-              </CardFooter>
             </Card>
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>

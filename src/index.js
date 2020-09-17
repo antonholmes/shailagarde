@@ -22,26 +22,10 @@ var hist = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={hist}>
-    {/* <Switch>
-      <Route>
-        <HashRouter>
-          <Route exact path="/journalism" component={JournalismSection} />
-        </HashRouter>
-      </Route>
-      <Route>
-        <HashRouter>
-          <Route exact path="/lifestyle" component={LifestyleSection} />
-        </HashRouter>
-      </Route>
-      <Route>
-        <HashRouter>
-          <Route exact path="/mental-health" component={MentalHealthSection} />
-        </HashRouter>
-      </Route>
-    </Switch> */}
     <Switch>
-      <Route path="/published-work" component={PublishedSection} />
-      <Route path="/talks" component={MentalHealthPage} />
+      <Route path="/lifestyle" component={LifestylePage} />
+      <Route path="/journalism" component={JournalismPage} />
+      <Route path="/mental-health" component={MentalHealthPage} />
       <Route path="/login-page" component={LoginPage} />
       <Route path="/blog" component={BlogPage} />
       <Route path='/holmes' component={BlogPage} />

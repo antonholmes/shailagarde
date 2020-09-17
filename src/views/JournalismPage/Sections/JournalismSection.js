@@ -31,10 +31,25 @@ export default function JournalismSection() {
     classes.imgFluid
   );
   return (
-    <div className={classes.section}>
+    <div className={classes.section} id='journalism'>
       <h2 className={classes.title}>Journalism</h2>
       <div>
         <GridContainer>
+          <GridItem xs={12} sm={12} md={4}>
+            <Card plain>
+              <GridItem xs={8} sm={6} md={10} className={classes.itemGrid}>
+                <Link
+                  to="/published-work"
+                  color="transparent"
+                >
+                  <img src={journ2} alt="..." className={imageClasses} />
+                  <h4 className={classes.cardTitle}>
+                    GMA News Online
+                  </h4>
+                </Link>
+              </GridItem>
+            </Card>
+          </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={8} sm={6} md={10} className={classes.itemGrid}>
@@ -49,21 +64,6 @@ export default function JournalismSection() {
               </h4>
                   </a>
                 </div>
-              </GridItem>
-            </Card>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <Card plain>
-              <GridItem xs={8} sm={6} md={10} className={classes.itemGrid}>
-                <Link
-                  to="/published-work"
-                  color="transparent"
-                >
-                  <img src={journ2} alt="..." className={imageClasses} />
-                  <h4 className={classes.cardTitle}>
-                    GMA News Online
-                  </h4>
-                </Link>
               </GridItem>
             </Card>
           </GridItem>

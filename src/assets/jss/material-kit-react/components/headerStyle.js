@@ -128,7 +128,7 @@ const headerStyle = {
     transitionDuration: ".2s, .2s, .35s",
     transitionTimingFunction: "linear, linear, ease",
     width: drawerWidth,
-    ...boxShadow,
+    // ...boxShadow,
     position: "fixed",
     display: "block",
     top: "0",
