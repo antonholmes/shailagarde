@@ -30,6 +30,7 @@ import LightboxReception from './Sections/LightboxReception'
 
 import SimpleReactLightbox from 'simple-react-lightbox'
 import LightboxButton from './Sections/LightboxButton'
+import SlideshowNY from './Sections/SlideshowNY'
 
 import profile from "assets/img/wedding2.jpg"
 
@@ -233,9 +234,10 @@ export default function ProfilePage(props) {
                             </div>
                           </GridItem>
                           <GridItem xs={11} sm={11} md={11}>
+                            <SlideshowNY />
                             {/* <SimpleReactLightbox> */}
                             {/* <GalleryCarouselNY /> */}
-                            <LightboxButton />
+                            {/* <LightboxButton /> */}
                             {/* <LightboxNY /> */}
                             {/* </SimpleReactLightbox> */}
                           </GridItem>
@@ -247,15 +249,6 @@ export default function ProfilePage(props) {
                       tabIcon: ListAlt,
                       tabContent: (
                         <GridContainer justify="center">
-                          <GridItem xs={11} sm={11} md={11}>
-                            <div className={classes.description}>
-                              <p>
-                                On the day itself, we took the cab from Queens to City Hall and lined up. It was first-come, first serve, so Shai did her makeup in line while in pambahay and tsinelas, then dressed later on when we had secured a slot.
-                              <br />
-                              We didn’t get rings, and we didn’t ask for anyone special to officiate. A City Hall official did it. Our thinking was that this would be a quick and fuss-free wedding, with a “real” one later on surrounded with our family and friends and done in a more traditional way.
-                              </p>
-                            </div>
-                          </GridItem>
                           <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
@@ -278,12 +271,16 @@ export default function ProfilePage(props) {
                           <GridItem xs={11} sm={11} md={11}>
                             <div className={classes.description}>
                               <p>
-                                Photos were taken on the Brooklyn Bridge. It was a sweltering summer day!  Reception was at a bistro called Clinton Hall, near South Street Seaport FIDI. Our cake was called WTF Waffle (red velvet with a lot of things on it) and we had burgers, winter sangria, and kamote fries with marshmallow dip. So good. We played Connect-4.
-                              <br />
-                              Anton had to go to class in the afternoon, so we all parted ways after lunch.
-                              <br />
-                              Church wedding is planned for December 29, 2019 (January proposal, June civil wedding, December church wedding, all 29. We’d book-end the year with anniversaries!)
-
+                                How a church wedding looks like when there’s a pandemic and you have three weeks to pull it off.
+                              </p>
+                              <p>
+                                Bride and groom masks and face mask souvenirs by our friend Russell Villafuerte. He made all of these overnight and had them delivered the next day!
+                              </p>
+                              <p>
+                                We chose rings with the help of Tita Aida Lazatin, a florist and renowned events stylist in Pampanga. We met, bonded, and booked her all at a wedding fair we randomly chanced upon sometime in July 2019 (more on this later). Her family’s jeweller went all the way from Bulacan to show us rings, and even gave us a discount. It took us but a few minutes to find something priced just right with a design we both love.
+                              </p>
+                              <p>
+                                Dress, veil, cord and pillows by Tita Adora Revilloza of Adora Couture. We worked with her on a design and concept (let’s just call it “simple K-drama wedding”) which she executed wonderfully in less than a week, including fittings. Shai’s aunt, Ofel, was the one who introduced Tita Adora to us, and also the one who took care of the expenses as her wedding gift to us.
                               </p>
                             </div>
                           </GridItem>
@@ -309,7 +306,13 @@ export default function ProfilePage(props) {
                           <GridItem xs={11} sm={11} md={11}>
                             <div className={classes.description}>
                               <p>
-                                Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.
+                                Hair and makeup by Dey Caisip. We also met him at that random wedding fair we didn’t plan on attending—Tita Aida excitedly led us to his booth. His work and his personality got us to book him on the spot.
+                              </p>
+                              <p>
+                                That was in July 2019, when our wedding was set in December (more on this later). Even as it got pushed back to June 2020 and then again to July, Dey not only agreed to still do hair and makeup, but also gave us a better price.
+                              </p>
+                              <p>
+                                We went to his salon in Angeles for the makeup trial and then went to Tita Adora’s atelier in Quezon City for the fitting. Our schedule was that type of tight.
                               </p>
                             </div>
                           </GridItem>
@@ -333,6 +336,19 @@ export default function ProfilePage(props) {
                             />
                           </GridItem>
                           <GridItem xs={11} sm={11} md={11}>
+                            <div className={classes.description}>
+                              <p>
+                                We booked Lakeshore in January 2019 after we got back from the US. We wanted the location to be logistically easy for everyone. Not in the traffic-jammed streets of Manila, but not in a far-flung countryside either. Somewhere near the airport and hotels for our guests from abroad. A place with a beautiful church that’s very near the reception venue. A location with a beautiful church and scenic surroundings for an easier shoot. Lakeshore, 20 minutes from our home in Pampanga, was an easy choice.
+                              </p>
+                              <p>
+                                We had wanted our church wedding to be on June 29, exactly a year after New York City Hall. Then life happened and we had to push it back to December. Another 29th would’ve been nice—an anniversary to celebrate at the start (proposal in January), middle (civil wedding in June), and end (church wedding in December) of every year. But one of the few things we were unwilling to compromise on was that our videographer had to be Jason Magbanua, and he was already booked for December 29. We settled for the 27th.
+                              </p>
+                              <p>
+                                Why Jason? Because we had been working in media/video production for years. We needed someone whose work and style we were familiar with so we wouldn’t have to worry about the video team on the day itself.
+                              </p>
+                            </div>
+                          </GridItem>
+                          <GridItem xs={11} sm={11} md={11}>
                             <SimpleReactLightbox>
                               <LightboxPrep />
                             </SimpleReactLightbox>
@@ -345,13 +361,6 @@ export default function ProfilePage(props) {
                       tabIcon: LocalFlorist,
                       tabContent: (
                         <GridContainer justify="center">
-                          <GridItem xs={11} sm={11} md={11}>
-                            <div className={classes.description}>
-                              <p>
-                                Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.
-                              </p>
-                            </div>
-                          </GridItem>
                           <GridItem xs={10} sm={10} md={5}>
                             <img
                               alt="..."
@@ -374,7 +383,10 @@ export default function ProfilePage(props) {
                           <GridItem xs={11} sm={11} md={11}>
                             <div className={classes.description}>
                               <p>
-                                Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.
+                                Bouquet by Villa Rosa, Tita Aida’s floral shop. If you google her, you’d find a post of two about Martha Stewart visiting the Lazatin ancestral home in Pampanga for lunch. The flowers you’d see are Tita Aida’s floral arrangements, and that house built in 1925 was where we met up with her to look at rings and bouquet pegs. Tita Aida made a matching boutonniere for Anton and sent ensaymadas and pigs in a blanket for us to munch on during prep. We lucked out on meeting such a lovely person by accident.
+                              </p>
+                              <p>
+                                In a nutshell, after booking Lakeshore and Jason in January, nothing further happened with the wedding planning. Shai got a job as a GMA reporter in March while Anton started working freelance as a web developer. It wasn’t until July, on a random weekend while running errands, that we would chance upon a wedding fair in the mall and book our next supplier. (Just one. It was for the cake.) We admired a garden display on our way out, and a kindly lady there chatted us up and gave us floral tea. We ended up having a great time in that booth. If not for that, we probably wouldn’t have been able to have this wedding the way we did.
                               </p>
                             </div>
                           </GridItem>
@@ -405,7 +417,16 @@ export default function ProfilePage(props) {
                           <GridItem xs={11} sm={11} md={11}>
                             <div className={classes.description}>
                               <p>
-                                Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling. Shai Lagarde is a writer, multimedia journalist, creative consultant, stylist, and speaker trained in mental health counseling.
+                                We couldn’t push through with the December 2019 wedding and had to push it back, again. June 29, 2020 this time. But by January, the Taal Volcano was throwing tantrums and by February, the COVID pandemic was starting. The situation looked less and less temporary when the entire country was placed on lockdown in March and the cases kept increasing.
+                              </p>
+                              <p>
+                                Instead of us, it was Shai’s sister Miku who got married in June. It was a simple ceremony in Brisbane, on university grounds, in front of a handful of friends and witnessed by the rest of us via Zoom. We had already scheduled to meet with the Lakeshore team and the parish priest the day after that, and their wedding helped us with our decision to push through with our church wedding.
+                              </p>
+                              <p>
+                                June 29 was impossible due to the three-Sunday rule of marriage banns in the Catholic Church. What was still possible was July 11 — another date that was meaningful to us during our courtship. We booked the church and set out to work on the marriage banns and other parish requirements, including finding an online Pre-Cana seminar we could attend. Anton was able to find one where we had to watch the talks online, write down our reflections, and email them to get a certificate.
+                              </p>
+                              <p>
+                                Emboldened (or perhaps, rendered nonchalant by everything that’s happened so far), we also decided to contact the suppliers we’ve already booked, expecting nothing. Lakeshore was wide open for July 11. Jason readily said yes. Dey, too. Anton called Tita Aida for help with the bouquet and with looking for rings. Shai contacted Tita Adora for the dress, Russell Villafuerte for the masks. We arranged for medical certificates for all our guests: the priest allowed only our parents and siblings along with two sets of sponsors.
                               </p>
                             </div>
                           </GridItem>
@@ -427,6 +448,19 @@ export default function ProfilePage(props) {
                               src={church10}
                               className={navImageClasses}
                             />
+                          </GridItem>
+                          <GridItem xs={11} sm={11} md={11}>
+                            <div className={classes.description}>
+                              <p>
+                                Time was usually against us, but for this wedding, time seemed on our side. We called everyone on such short notice, but they were all aboe to deliver. Jason had another wedding to shoot on July 11 and almost had to beg off shooting ours. Thankfully, our suppliers and guests were patient and accommodating—we moved things around until we were able to find a common time where everyone can make it.
+                              </p>
+                              <p>
+                                Ultimately, we had our wedding the way we truly wanted: bare-bones and intimate. Our parents were there. Their siblings and our siblings were our sponsors. Everyone else we wanted to invite had sent us their well wishes and gifts online.
+                              </p>
+                              <p>
+                                And just like our New York wedding, this one wasn’t really planned, and turned out wonderfully.
+                              </p>
+                            </div>
                           </GridItem>
                           <GridItem xs={11} sm={11} md={11}>
                             <SimpleReactLightbox>
